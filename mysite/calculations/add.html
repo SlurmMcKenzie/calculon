@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Linas Rechenzentrum</title>
+
+    <script src="calculations.js"></script>
+	<script src="../jquery/jquery-3.1.1.min.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../lina-style.css" rel="stylesheet">
+
+  </head>
+
+<body>
+<!-- Navigationsbar -->
+    <nav class="navbar navbar-default">
+      <div class="container abstand-eins">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">Plina</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Aufgaben <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="add.html">Plusaufgaben</a></li>
+                <li><a href="minus.html">Minusaufgaben</a></li>
+                <li><a href="multi.html">Multiplikation</a></li>
+                <li><a href="divi.html">Division</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- Tabelle -->
+<div class="container abstand-zwei">
+<!--
+<div class="jumbotron text-center">
+	<h1>Plusrechnen</h1>
+</div>
+-->
+<div class="row text-center bg-2 abstand-eins">
+  <div class="col-md-12"><h2>Plusrechnen</h2></div>
+</div>
+<p></p>
+<div class="row text-center bg-1 abstand-eins">
+  <div class="col-md-2"><h3 id="number1"></h3></div>
+  <div class="col-md-2"><h3>+</h3></div>
+  <div class="col-md-2"><h3 id="number2"></h3></div>
+  <div class="col-md-2"><h3>=</h3></div>
+  <div class="col-md-2"><h3><input type="intNumber" id="userInput" oninput="evaluateSolution()" min="1" max="100" size="3" maxlength="3"></h3></div>
+  <div class="col-md-2"><h3 id="solutionCheck"></h3></div>
+</div>
+<p></p>
+<div class="row text-center bg-1 abstand-eins">
+  <div class="col-md-2"><h3 id="number2"></h3></div>
+  <div class="col-md-2"><h3>+</h3></div>
+  <div class="col-md-2"><h3 id="number1"></h3></div>
+  <div class="col-md-2"><h3>=</h3></div>
+  <div class="col-md-2"><h3 id="number3"><input type="intNumber" id="userInput" oninput="evaluateSolution()" min="1" max="100" size="3" maxlength="3"></h3></div>
+  <div class="col-md-2"><h3 id="solutionCheck"></h3></div>
+</div>
+
+<!--<table class="table table-responsive text-center">
+    <tbody>
+      <tr class="success">
+        <td><h3 id="number1"></h3></td>
+        <td><h3>+</h3></td>
+        <td><h3 id="number2"></h3></td>
+        <td><h3>=</h3></td>
+        <td><h3 id="number3"><input type="intNumber" id="userInput" oninput="evaluateSolution()" min="1" max="100" size="3" maxlength="3"></h3></td>
+        <td><h3 id="solutionCheck"></h3></td>
+      </tr>
+      <tr class="danger">
+        <td><h3></h3></td>
+      </tr>
+      <tr class="info">
+        <td><h3></h3></td>
+      </tr>
+      <tr class="success">
+        <td><h3></h3></td>
+      </tr>
+    </tbody>
+  </table>
+-->
+</div>
+</body>
+</html>
+
