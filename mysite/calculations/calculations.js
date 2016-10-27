@@ -21,29 +21,34 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     // random
     function zufall() {
-	var a = Math.floor(Math.random() * 25);
-	return a;
+    var a = Math.floor(Math.random() * 25);
+    return a;
 }
 
+    function malzufall() {
+    var b = Math.floor(Math.random() * 10);
+    return b;
+}
+
+    document.getElementById("number1").innerHTML = summe(zufall(), zufall());
+    document.getElementById("number2").innerHTML = summe(zufall(), zufall());
+    var getElementOne = document.getElementById("number1").innerHTML;
+    var getElementTwo = document.getElementById("number2").innerHTML;
+    var addElements = +getElementOne + +getElementTwo;
 
     // listen to input (jquery)
-
     $('input')
     .on('input', function() {
-        $('#solutionCheck').html( $(this).val() );
-
-    })
-    .on('focus', function() {
-        $('#solutionCheck').html( $(this).val() );
-    })
-
-	function malzufall() {
-	var b = Math.floor(Math.random() * 10);
-	return b;
-}
-    document.getElementById("number1").innerHTML = summe(zufall(), zufall());
-	document.getElementById("number2").innerHTML = summe(zufall(), zufall());
+        if ($(this).val() == addElements) {
+            $('#solutionCheck').html( "&#x2713;" );
+        } else {
+            $('#solutionCheck').html( "Falsch" );
+        }
+    });
 });
+
+
+// &#x2713;
 
 // TODO-Liste:
 
