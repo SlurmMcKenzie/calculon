@@ -7,11 +7,26 @@
 // Waiting until the DOM is loaded...
 document.addEventListener("DOMContentLoaded", function(event) {
 
-//$(document).ready(function() {
+    // random addition
+    function zufall() {
+    var a = Math.floor(Math.random() * 25);
+    return a;
+}
+
+    // random multiplikation
+    function malzufall() {
+    var b = Math.floor(Math.random() * 10);
+    return b;
+}
 
     // addition
 	function summe(summand1, summand2) {
     return summand1 + summand2;
+}
+
+    // subtraction
+	function subtraction(minuend, subtrahend) {
+    return minuend - subtrahend;
 }
 
     // multiplication
@@ -19,16 +34,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
     return faktor1 * faktor2;
 }
 
-    // random
-    function zufall() {
-    var a = Math.floor(Math.random() * 25);
-    return a;
+    // division
+	function quotient(dividend, divisor) {
+    return dividend / divisor;
 }
 
-    function malzufall() {
-    var b = Math.floor(Math.random() * 10);
-    return b;
-}
 
     document.getElementById("number1").innerHTML = summe(zufall(), zufall());
     document.getElementById("number2").innerHTML = summe(zufall(), zufall());
@@ -40,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     $('input')
     .on('input', function() {
         if ($(this).val() == addElements) {
-            $('#solutionCheck').html( "&#9745;" );
+            $('#solutionCheck1').html( "&#9745;" );
             $("#row1").removeClass("bg-1");
             $("#row1").addClass("bg-green");
         } else {

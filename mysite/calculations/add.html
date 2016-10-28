@@ -13,15 +13,16 @@
 
     <title>Linas Rechenzentrum</title>
 
-    <script src="calculations.js"></script>
+    <script src="addition.js"></script>
 	<script src="../jquery/jquery-3.1.1.min.js"></script>
 	<script src="../bootstrap/js/bootstrap.min.js"></script>
 	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="../lina-style.css" rel="stylesheet">
+	<link href="../mainstyle.css" rel="stylesheet">
 
   </head>
 
-<body>
+<body onload="resetter()";>
+
 <!-- Navigationsbar -->
     <nav class="navbar navbar-default">
       <div class="container abstand-eins">
@@ -56,23 +57,60 @@
 <div class="row text-center bg-2 abstand-eins">
   <div class="col-md-12"><h2>Plusrechnen</h2></div>
 </div>
+
 <p></p>
+
 <div id="row1" class="row text-center bg-1 abstand-eins">
   <div class="col-md-2"><h3 id="number1"></h3></div>
   <div class="col-md-2"><h3>+</h3></div>
   <div class="col-md-2"><h3 id="number2"></h3></div>
   <div class="col-md-2"><h3>=</h3></div>
-  <div class="col-md-2"><h3><input type="intNumber" id="userInput" min="1" max="100" size="3" maxlength="3"></h3></div>
-  <div class="col-md-2"><h3 id="solutionCheck"></h3></div>
+  <div class="col-md-2"><h3><input type="intNumber" class="oneInput" id="reset1" min="1" max="100" size="3" maxlength="3"></h3></div>
+  <div class="col-md-2"><h3 id="solutionCheck1"></h3></div>
 </div>
+
 <p></p>
+
 <div id="row2" class="row text-center bg-1 abstand-eins">
-  <div class="col-md-2"><h3 id="number2"></h3></div>
+  <div class="col-md-2"><h3 id="number3"></h3></div>
   <div class="col-md-2"><h3>+</h3></div>
-  <div class="col-md-2"><h3 id="number1"></h3></div>
+  <div class="col-md-2"><h3 id="number4"></h3></div>
   <div class="col-md-2"><h3>=</h3></div>
-  <div class="col-md-2"><h3 id="number3"><input type="intNumber" id="userInput" min="1" max="100" size="3" maxlength="3"></h3></div>
-  <div class="col-md-2"><h3 id="solutionCheck"></h3></div>
+  <div class="col-md-2"><h3><input type="intNumber" class="twoInput" min="1" max="100" size="3" maxlength="3"></h3></div>
+  <div class="col-md-2"><h3 id="solutionCheck2"></h3></div>
+</div>
+
+<p></p>
+
+<div id="row3" class="row text-center bg-1 abstand-eins">
+  <div class="col-md-2"><h3 id="number5"></h3></div>
+  <div class="col-md-2"><h3>+</h3></div>
+  <div class="col-md-2"><h3 id="number6"></h3></div>
+  <div class="col-md-2"><h3>=</h3></div>
+  <div class="col-md-2"><h3><input type="intNumber" class="threeInput" min="1" max="100" size="3" maxlength="3"></h3></div>
+  <div class="col-md-2"><h3 id="solutionCheck3"></h3></div>
+</div>
+
+<p></p>
+
+<div id="row4" class="row text-center bg-1 abstand-eins">
+  <div class="col-md-2"><h3 id="number7"></h3></div>
+  <div class="col-md-2"><h3>+</h3></div>
+  <div class="col-md-2"><h3 id="number8"></h3></div>
+  <div class="col-md-2"><h3>=</h3></div>
+  <div class="col-md-2"><h3><input type="intNumber" class="fourInput" min="1" max="100" size="3" maxlength="3"></h3></div>
+  <div class="col-md-2"><h3 id="solutionCheck4"></h3></div>
+</div>
+
+<p></p>
+
+<div id="row5" class="row text-center bg-1 abstand-eins">
+  <div class="col-md-2"><h3 id="number9"></h3></div>
+  <div class="col-md-2"><h3>+</h3></div>
+  <div class="col-md-2"><h3 id="number10"></h3></div>
+  <div class="col-md-2"><h3>=</h3></div>
+  <div class="col-md-2"><h3><input type="intNumber" class="fiveInput" min="1" max="100" size="3" maxlength="3"></h3></div>
+  <div class="col-md-2"><h3 id="solutionCheck5"></h3></div>
 </div>
 
 </div>
