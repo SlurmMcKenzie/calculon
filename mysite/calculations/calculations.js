@@ -40,9 +40,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
     $('input')
     .on('input', function() {
         if ($(this).val() == addElements) {
-            $('#solutionCheck').html( "&#x2713;" );
+            $('#solutionCheck').html( "&#9745;" );
+            $("#row1").removeClass("bg-1");
+            $("#row1").addClass("bg-green");
         } else {
-            $('#solutionCheck').html( "Falsch" );
+            $('#solutionCheck').html( "&#9746;" );
+            $("#row1").removeClass("bg-1");
+            $("#row1").addClass("bg-red");
+        }
+    })
+    .on('focus', function() {
+        if ($(this).val() == addElements) {
+            //$("#row1").removeClass("bg-1");
+            //$("#row1").addClass("bg-green");
+        } else {
+            $("#row1").removeClass("bg-1");
+            $("#row1").addClass("bg-red");
         }
     });
 });
