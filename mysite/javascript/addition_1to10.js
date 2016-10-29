@@ -8,9 +8,15 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
     // random addition
-    function zufall() {
-    var a = Math.floor(Math.random() * 25);
-    return a;
+    //function zufall() {
+    //var a = Math.floor((Math.random() * 11) + 0);
+    //return a;
+//}
+
+function zufall(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min +1)) + min;
 }
 
     // addition
@@ -18,14 +24,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     return summand1 + summand2;
 }
 
-    // reset form data on reload
-    function resetter() {
-    document.getElementsByTagName("oneInput").value = "";
-}
-
     // Row 1
-    document.getElementById("number1").innerHTML = summe(zufall(), zufall());
-    document.getElementById("number2").innerHTML = summe(zufall(), zufall());
+    document.getElementById("number1").innerHTML = zufall(0,10);
+    document.getElementById("number2").innerHTML = zufall(0,10);
     var getElementOne = document.getElementById("number1").innerHTML;
     var getElementTwo = document.getElementById("number2").innerHTML;
     var addElements1 = +getElementOne + +getElementTwo;
@@ -51,8 +52,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 
     // Row 2
-    document.getElementById("number3").innerHTML = summe(zufall(), zufall());
-    document.getElementById("number4").innerHTML = summe(zufall(), zufall());
+    document.getElementById("number3").innerHTML = zufall(0,10);
+    document.getElementById("number4").innerHTML = zufall(0,10);
     var getElementThree = document.getElementById("number3").innerHTML;
     var getElementFour = document.getElementById("number4").innerHTML;
     var addElements2 = +getElementThree + +getElementFour;
@@ -78,8 +79,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 
     // Row 3
-    document.getElementById("number5").innerHTML = summe(zufall(), zufall());
-    document.getElementById("number6").innerHTML = summe(zufall(), zufall());
+    document.getElementById("number5").innerHTML = zufall(0,10);
+    document.getElementById("number6").innerHTML = zufall(0,10);
     var getElementFive = document.getElementById("number5").innerHTML;
     var getElementSix = document.getElementById("number6").innerHTML;
     var addElements3 = +getElementFive + +getElementSix;
@@ -105,8 +106,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 
     // Row 4
-    document.getElementById("number7").innerHTML = summe(zufall(), zufall());
-    document.getElementById("number8").innerHTML = summe(zufall(), zufall());
+    document.getElementById("number7").innerHTML = zufall(0,10);
+    document.getElementById("number8").innerHTML = zufall(0,10);
     var getElementSeven = document.getElementById("number7").innerHTML;
     var getElementEight = document.getElementById("number8").innerHTML;
     var addElements4 = +getElementSeven + +getElementEight;
@@ -132,8 +133,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 
     // Row 5
-    document.getElementById("number9").innerHTML = summe(zufall(), zufall());
-    document.getElementById("number10").innerHTML = summe(zufall(), zufall());
+    document.getElementById("number9").innerHTML = zufall(0,10);
+    document.getElementById("number10").innerHTML = zufall(0,10);
     var getElementNine = document.getElementById("number9").innerHTML;
     var getElementTen = document.getElementById("number10").innerHTML;
     var addElements5 = +getElementNine + +getElementTen;
