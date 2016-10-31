@@ -1,4 +1,8 @@
-// Add two numbers while the result is in the range of 20.
+// HTML-Element: 						$("button")
+// ID-Element:							$("#id")
+// Class-Element:						$(".class")
+// HTML-Elements with Class "intro":	$("p.intro")
+// Elemente mit HREF-Attribut:			$("[href]")
 
 // Waiting until the DOM is loaded...
 document.addEventListener("DOMContentLoaded", function(event) {
@@ -15,9 +19,8 @@ function zufall(min, max) {
 }
 
     // Row 1
-    var element1 = zufall(0,20);
-    var differenceOne = 20 - element1;
-    var element2 = zufall(0,differenceOne);
+    var element1 = 10 * zufall(0,10);
+    var element2 = 10 * zufall(0,(10 - element1 / 10));
 
     document.getElementById("number1").innerHTML = element1;
     document.getElementById("number2").innerHTML = element2;
@@ -46,9 +49,8 @@ function zufall(min, max) {
     });
 
     // Row 2
-    var element3 = zufall(0,20);
-    var differenceTwo = 20 - element3;
-    var element4 = zufall(0,differenceTwo);
+    var element3 = 10 * zufall(0,10);
+    var element4 = 10 * zufall(0,(10 - element3 / 10));
 
     document.getElementById("number3").innerHTML = element3;
     document.getElementById("number4").innerHTML = element4;
@@ -77,9 +79,8 @@ function zufall(min, max) {
     });
 
     // Row 3
-    var element5 = zufall(0,20);
-    var differenceThree = 20 - element5;
-    var element6 = zufall(0,differenceThree);
+    var element5 = 10 * zufall(0,10);
+    var element6 = 10 * zufall(0,(10 - element5 / 10));
 
     document.getElementById("number5").innerHTML = element5;
     document.getElementById("number6").innerHTML = element6;
@@ -108,9 +109,8 @@ function zufall(min, max) {
     });
 
     // Row 4
-    var element7 = zufall(0,20);
-    var differenceFour = 20 - element7;
-    var element8 = zufall(0,differenceFour);
+    var element7 = 10 * zufall(0,10);
+    var element8 = 10 * zufall(0,(10 - element7 / 10));
 
     document.getElementById("number7").innerHTML = element7;
     document.getElementById("number8").innerHTML = element8;
@@ -139,9 +139,8 @@ function zufall(min, max) {
     });
 
     // Row 5
-    var element9 = zufall(0,20);
-    var differenceFive = 20 - element9;
-    var element10 = zufall(0,differenceFive);
+    var element9 = 10 * zufall(0,10);
+    var element10 = 10 * zufall(0,(10 - element9 / 10));
 
     document.getElementById("number9").innerHTML = element9;
     document.getElementById("number10").innerHTML = element10;

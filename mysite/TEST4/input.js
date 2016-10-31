@@ -17,16 +17,12 @@ function rnd(min, max) {
 
 function radioactive() {
 var numero1 = rnd(0,20);
-var numero2 = rnd(0,20);
-if (numero1 + numero2 <= 20){
+var rest = 20 - numero1;
+var numero2 = rnd(0,rest);
     document.getElementById("number1").innerHTML = numero1;
     document.getElementById("number2").innerHTML = numero2;
-} else {
-    radioactive();
-    }
 }
 
 radioactive();
-
 
 });
