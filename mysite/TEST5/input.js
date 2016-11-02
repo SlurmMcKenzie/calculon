@@ -16,13 +16,16 @@ function rnd(min, max) {
 }
 
 function radioactive() {
-var numero1 = 10 * rnd(0,10);
-var rest1 = rnd(0,100 - numero1);
-var numero2 = 10 * Math.ceil(rest1 / 10);
+var numero1 = rnd(0,20);
+var numero2 = rnd(0,20);
+if (numero1 >= numero2) {;
     document.getElementById("number1").innerHTML = numero1;
     document.getElementById("number2").innerHTML = numero2;
+} else {
+    document.getElementById("number2").innerHTML = numero1;
+    document.getElementById("number1").innerHTML = numero2;
 }
-
+}
 radioactive();
 
 });

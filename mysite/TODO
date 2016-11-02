@@ -1,3 +1,18 @@
+// &#x2713;
+
+// Shift Fokus aufs nächste Eingabefeld
+// färbe die untere Leiste blau wenn alle Ergebnisse stimmen
+
+// TODO-Liste:
+
+// Fünf Aufgaben, möchtest Du noch weitermachen? Wieder fünf.
+// An der Seite zurück
+// Punkt vor Strich-Rechnung
+// Formelsammlung
+// Mal bis 10
+// Lokalisierungen
+// Tabellen mit Zahlen
+
 - Plusrechnen (Level 1):
 Stufe 1: 1 - 10
 Stufe 2: Runde Zehner
@@ -14,16 +29,8 @@ Stufe 5: Aufgaben mit Leerstellen
 
 - Mal (Level 3):
 Stufe 1: 1 - 10
-Stufe 2: Runde Zehner
-Stufe 3: 1 - 100
-Stufe 4: Rechenkreise
-Stufe 5: Aufgaben mit Leerstellen
+Stufe 2: Punkt- und Strichrechnung
 
 - Geteilt (Level 4):
 Stufe 1: 1 - 10
-Stufe 2: Runde Zehner
-Stufe 3: 1 - 100
-Stufe 4: Rechenkreise
-Stufe 5: Aufgaben mit Leerstellen
-
-- Punkt- und Strichrechnung (Level 5)
+Stufe 2: Punkt- und Strichrechnung

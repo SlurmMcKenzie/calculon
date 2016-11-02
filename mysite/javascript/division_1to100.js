@@ -1,12 +1,11 @@
 "use strict";
-// Add two numbers that belong to a group of tens in a range of 100.
+// Multiply two numbers while the result is in the range of 20.
 
 // Waiting until the DOM is loaded...
 document.addEventListener("DOMContentLoaded", function(event) {
 
-var rangemin = 0;
+var rangemin = 1;
 var rangemax = 10;
-var decadic = 10;
 
 function zufall(min, max) {
     min = Math.ceil(min);
@@ -14,20 +13,16 @@ function zufall(min, max) {
     return Math.floor(Math.random() * (max - min +1)) + min;
 }
 
-    // addition
-	function summe(summand1, summand2) {
-    return summand1 + summand2;
-}
-
     // Row 1
-    var element1 = decadic * zufall(rangemin,rangemax);
-    var element2 = decadic * zufall(rangemin,(rangemax - element1 / decadic));
+    var element1 = zufall(rangemin,rangemax);
+    var element2 = zufall(rangemin,rangemax);
+    var element3 = element1 * element2
 
-    document.getElementById("number1").innerHTML = element1;
+    document.getElementById("number1").innerHTML = element3;
     document.getElementById("number2").innerHTML = element2;
     var getElementOne = document.getElementById("number1").innerHTML;
     var getElementTwo = document.getElementById("number2").innerHTML;
-    var addElements1 = +getElementOne + +getElementTwo;
+    var addElements1 = +getElementOne / +getElementTwo;
 
     // listen to input (jquery)
     $('input.oneInput')
@@ -51,14 +46,15 @@ function zufall(min, max) {
     });
 
     // Row 2
-    var element3 = decadic * zufall(rangemin,rangemax);
-    var element4 = decadic * zufall(rangemin,(rangemax - element3 / decadic));
+    var element4 = zufall(rangemin,rangemax);
+    var element5 = zufall(rangemin,rangemax);
+    var element6 = element4 * element5
 
-    document.getElementById("number3").innerHTML = element3;
-    document.getElementById("number4").innerHTML = element4;
+    document.getElementById("number3").innerHTML = element6;
+    document.getElementById("number4").innerHTML = element5;
     var getElementThree = document.getElementById("number3").innerHTML;
     var getElementFour = document.getElementById("number4").innerHTML;
-    var addElements2 = +getElementThree + +getElementFour;
+    var addElements2 = +getElementThree / +getElementFour;
 
     // listen to input (jquery)
     $('input.twoInput')
@@ -82,14 +78,15 @@ function zufall(min, max) {
     });
 
     // Row 3
-    var element5 = decadic * zufall(rangemin,rangemax);
-    var element6 = decadic * zufall(rangemin,(rangemax - element5 / decadic));
+    var element7 = zufall(rangemin,rangemax);
+    var element8 = zufall(rangemin,rangemax);
+    var element9 = element7 * element8
 
-    document.getElementById("number5").innerHTML = element5;
-    document.getElementById("number6").innerHTML = element6;
+    document.getElementById("number5").innerHTML = element9;
+    document.getElementById("number6").innerHTML = element8;
     var getElementFive = document.getElementById("number5").innerHTML;
     var getElementSix = document.getElementById("number6").innerHTML;
-    var addElements3 = +getElementFive + +getElementSix;
+    var addElements3 = +getElementFive / +getElementSix;
 
     // listen to input (jquery)
     $('input.threeInput')
@@ -113,14 +110,15 @@ function zufall(min, max) {
     });
 
     // Row 4
-    var element7 = decadic * zufall(rangemin,rangemax);
-    var element8 = decadic * zufall(rangemin,(rangemax - element7 / decadic));
+    var element10 = zufall(rangemin,rangemax);
+    var element11 = zufall(rangemin,rangemax);
+    var element12 = element11 * element10
 
-    document.getElementById("number7").innerHTML = element7;
-    document.getElementById("number8").innerHTML = element8;
+    document.getElementById("number7").innerHTML = element12;
+    document.getElementById("number8").innerHTML = element11;
     var getElementSeven = document.getElementById("number7").innerHTML;
     var getElementEight = document.getElementById("number8").innerHTML;
-    var addElements4 = +getElementSeven + +getElementEight;
+    var addElements4 = +getElementSeven / +getElementEight;
 
     // listen to input (jquery)
     $('input.fourInput')
@@ -144,14 +142,15 @@ function zufall(min, max) {
     });
 
     // Row 5
-    var element9 = decadic * zufall(rangemin,rangemax);
-    var element10 = decadic * zufall(rangemin,(rangemax - element9 / decadic));
+    var element13 = zufall(rangemin,rangemax);
+    var element14 = zufall(rangemin,rangemax);
+    var element15 = element13 * element14
 
-    document.getElementById("number9").innerHTML = element9;
-    document.getElementById("number10").innerHTML = element10;
+    document.getElementById("number9").innerHTML = element15;
+    document.getElementById("number10").innerHTML = element14;
     var getElementNine = document.getElementById("number9").innerHTML;
     var getElementTen = document.getElementById("number10").innerHTML;
-    var addElements5 = +getElementNine + +getElementTen;
+    var addElements5 = +getElementNine / +getElementTen;
 
     // listen to input (jquery)
     $('input.fiveInput')

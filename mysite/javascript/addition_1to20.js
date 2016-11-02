@@ -1,12 +1,11 @@
 "use strict";
-// Add two numbers that belong to a group of tens in a range of 100.
+// Add two numbers while the result is in the range of 20.
 
 // Waiting until the DOM is loaded...
 document.addEventListener("DOMContentLoaded", function(event) {
 
 var rangemin = 0;
-var rangemax = 10;
-var decadic = 10;
+var rangemax = 20;
 
 function zufall(min, max) {
     min = Math.ceil(min);
@@ -18,10 +17,12 @@ function zufall(min, max) {
 	function summe(summand1, summand2) {
     return summand1 + summand2;
 }
+    $(".oneInput").focus();
 
     // Row 1
-    var element1 = decadic * zufall(rangemin,rangemax);
-    var element2 = decadic * zufall(rangemin,(rangemax - element1 / decadic));
+    var element1 = zufall(rangemin,rangemax);
+    var differenceOne = rangemax - element1;
+    var element2 = zufall(rangemin,differenceOne);
 
     document.getElementById("number1").innerHTML = element1;
     document.getElementById("number2").innerHTML = element2;
@@ -37,6 +38,7 @@ function zufall(min, max) {
             $("#row1").removeClass("bg-1");
             $("#row1").addClass("bg-green");
             $(".oneInput").replaceWith(addElements1);
+            $(".twoInput").focus();
         } else {
             $('#solutionCheck1').html( "&#9746;" );
             $("#row1").removeClass("bg-1");
@@ -51,8 +53,9 @@ function zufall(min, max) {
     });
 
     // Row 2
-    var element3 = decadic * zufall(rangemin,rangemax);
-    var element4 = decadic * zufall(rangemin,(rangemax - element3 / decadic));
+    var element3 = zufall(rangemin,rangemax);
+    var differenceTwo = rangemax - element3;
+    var element4 = zufall(rangemin,differenceTwo);
 
     document.getElementById("number3").innerHTML = element3;
     document.getElementById("number4").innerHTML = element4;
@@ -68,6 +71,7 @@ function zufall(min, max) {
             $("#row2").removeClass("bg-1");
             $("#row2").addClass("bg-green");
             $(".twoInput").replaceWith(addElements2);
+            $(".threeInput").focus();
         } else {
             $('#solutionCheck2').html( "&#9746;" );
             $("#row2").removeClass("bg-1");
@@ -82,8 +86,9 @@ function zufall(min, max) {
     });
 
     // Row 3
-    var element5 = decadic * zufall(rangemin,rangemax);
-    var element6 = decadic * zufall(rangemin,(rangemax - element5 / decadic));
+    var element5 = zufall(rangemin,rangemax);
+    var differenceThree = rangemax - element5;
+    var element6 = zufall(rangemin,differenceThree);
 
     document.getElementById("number5").innerHTML = element5;
     document.getElementById("number6").innerHTML = element6;
@@ -99,6 +104,7 @@ function zufall(min, max) {
             $("#row3").removeClass("bg-1");
             $("#row3").addClass("bg-green");
             $(".threeInput").replaceWith(addElements3);
+            $(".fourInput").focus();
         } else {
             $('#solutionCheck3').html( "&#9746;" );
             $("#row3").removeClass("bg-1");
@@ -113,8 +119,9 @@ function zufall(min, max) {
     });
 
     // Row 4
-    var element7 = decadic * zufall(rangemin,rangemax);
-    var element8 = decadic * zufall(rangemin,(rangemax - element7 / decadic));
+    var element7 = zufall(rangemin,rangemax);
+    var differenceFour = rangemax - element7;
+    var element8 = zufall(rangemin,differenceFour);
 
     document.getElementById("number7").innerHTML = element7;
     document.getElementById("number8").innerHTML = element8;
@@ -130,6 +137,7 @@ function zufall(min, max) {
             $("#row4").removeClass("bg-1");
             $("#row4").addClass("bg-green");
             $(".fourInput").replaceWith(addElements4);
+            $(".fiveInput").focus();
         } else {
             $('#solutionCheck4').html( "&#9746;" );
             $("#row4").removeClass("bg-1");
@@ -144,8 +152,9 @@ function zufall(min, max) {
     });
 
     // Row 5
-    var element9 = decadic * zufall(rangemin,rangemax);
-    var element10 = decadic * zufall(rangemin,(rangemax - element9 / decadic));
+    var element9 = zufall(rangemin,rangemax);
+    var differenceFive = rangemax - element9;
+    var element10 = zufall(rangemin,differenceFive);
 
     document.getElementById("number9").innerHTML = element9;
     document.getElementById("number10").innerHTML = element10;
