@@ -12,6 +12,7 @@ function zufall(min, max) {
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min +1)) + min;
 }
+    $(".oneInput").focus();
 
     // Row 1
     var element1 = zufall(rangemin,rangemax);
@@ -32,6 +33,7 @@ function zufall(min, max) {
             $("#row1").removeClass("bg-1");
             $("#row1").addClass("bg-green");
             $(".oneInput").replaceWith(addElements1);
+            $(".twoInput").focus();
         } else {
             $('#solutionCheck1').html( "&#9746;" );
             $("#row1").removeClass("bg-1");
@@ -64,6 +66,7 @@ function zufall(min, max) {
             $("#row2").removeClass("bg-1");
             $("#row2").addClass("bg-green");
             $(".twoInput").replaceWith(addElements2);
+            $(".threeInput").focus();
         } else {
             $('#solutionCheck2').html( "&#9746;" );
             $("#row2").removeClass("bg-1");
@@ -96,6 +99,7 @@ function zufall(min, max) {
             $("#row3").removeClass("bg-1");
             $("#row3").addClass("bg-green");
             $(".threeInput").replaceWith(addElements3);
+            $(".fourInput").focus();
         } else {
             $('#solutionCheck3').html( "&#9746;" );
             $("#row3").removeClass("bg-1");
@@ -128,6 +132,7 @@ function zufall(min, max) {
             $("#row4").removeClass("bg-1");
             $("#row4").addClass("bg-green");
             $(".fourInput").replaceWith(addElements4);
+            $(".fiveInput").focus();
         } else {
             $('#solutionCheck4').html( "&#9746;" );
             $("#row4").removeClass("bg-1");
