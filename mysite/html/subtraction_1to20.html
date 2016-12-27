@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Linas Rechenzentrum</title>
+    <title>Rechenexperte</title>
 
     <script src="../javascript/subtraction_1to20.js"></script>
 
@@ -26,103 +26,148 @@
 
 <!-- Navigationsbar -->
     <nav class="navbar navbar-default">
-      <div class="container abstand-eins">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="../index.html">Plina</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Aufgaben <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="addition_1to20.html">Plusaufgaben</a></li>
-                <li><a href="minus.html">Minusaufgaben</a></li>
-                <li><a href="multi.html">Multiplikation</a></li>
-                <li><a href="divi.html">Division</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html">Rechenexperte</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="../index.html">Start</a></li>
+              <li><a href="addition_1to20.html">Addition</a></li>
+              <li><a href="subtraction_1to20.html">Subtraktion</a></li>
+              <li><a href="multiplication_1to100.html">Multiplikation</a></li>
+              <li><a href="division_1to100.html">Division</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
 
 <!-- Tabelle -->
-<div class="container abstand-zwei">
+<div class="container">
 
-<div class="row text-center bg-2 abstand-eins">
-  <div class="col-md-12"><h2>Minusrechnen</h2></div>
+<div class="row text-center abstand-1">
+
+<div class="row bg-1 abstand-1">
+  <div class="col-xs-12"><h4>Minusrechnen (bis 20)</h4></div>
 </div>
 
 <p></p>
 
-<div id="row1" class="row text-center bg-1 abstand-eins">
-  <div class="col-md-2"><h3 id="number1"></h3></div>
-  <div class="col-md-2"><h3>-</h3></div>
-  <div class="col-md-2"><h3 id="number2"></h3></div>
-  <div class="col-md-2"><h3>=</h3></div>
-  <div class="col-md-2"><h3><input autocomplete="off" type="intNumber" class="oneInput" id="reset1" min="1" max="100" size="3" maxlength="3"></h3></div>
-  <div class="col-md-2"><h3 id="solutionCheck1"></h3></div>
+<div id="row1" class="row bg-1 abstand-1">
+    <div class="col-xs-6">
+        <div class="row abstand-1">
+            <div class="col-xs-3"><h3 id="number1"></h3></div>
+            <div class="col-xs-3"><h3>-</h3></div>
+            <div class="col-xs-3"><h3 id="number2"></h3></div>
+            <div class="col-xs-3"><h3>=</h3></div>
+        </div>
+    </div>
+    <div class="col-xs-6">
+        <div class="row">
+            <div class="col-xs-6"><h3><input autocomplete="off" type="intNumber" class="oneInput" id="reset1" min="1" max="100" size="3" maxlength="3"></h3></div>
+            <div class="col-xs-6"><h3 id="solutionCheck1"></h3></div>
+        </div>
+    </div>
 </div>
 
 <p></p>
 
-<div id="row2" class="row text-center bg-1 abstand-eins">
-  <div class="col-md-2"><h3 id="number3"></h3></div>
-  <div class="col-md-2"><h3>-</h3></div>
-  <div class="col-md-2"><h3 id="number4"></h3></div>
-  <div class="col-md-2"><h3>=</h3></div>
-  <div class="col-md-2"><h3><input autocomplete="off" type="intNumber" class="twoInput" min="1" max="100" size="3" maxlength="3"></h3></div>
-  <div class="col-md-2"><h3 id="solutionCheck2"></h3></div>
+<div id="row2" class="row bg-1 abstand-1">
+    <div class="col-xs-6">
+        <div class="row abstand-1">
+            <div class="col-xs-3"><h3 id="number3"></h3></div>
+            <div class="col-xs-3"><h3>-</h3></div>
+            <div class="col-xs-3"><h3 id="number4"></h3></div>
+            <div class="col-xs-3"><h3>=</h3></div>
+        </div>
+    </div>
+    <div class="col-xs-6">
+        <div class="row">
+            <div class="col-xs-6"><h3><input autocomplete="off" type="intNumber" class="twoInput" min="1" max="100" size="3" maxlength="3"></h3></div>
+            <div class="col-xs-6"><h3 id="solutionCheck2"></h3></div>
+        </div>
+    </div>
 </div>
 
 <p></p>
 
-<div id="row3" class="row text-center bg-1 abstand-eins">
-  <div class="col-md-2"><h3 id="number5"></h3></div>
-  <div class="col-md-2"><h3>-</h3></div>
-  <div class="col-md-2"><h3 id="number6"></h3></div>
-  <div class="col-md-2"><h3>=</h3></div>
-  <div class="col-md-2"><h3><input autocomplete="off" type="intNumber" class="threeInput" min="1" max="100" size="3" maxlength="3"></h3></div>
-  <div class="col-md-2"><h3 id="solutionCheck3"></h3></div>
+<div id="row3" class="row bg-1 abstand-1">
+    <div class="col-xs-6">
+        <div class="row abstand-1">
+            <div class="col-xs-3"><h3 id="number5"></h3></div>
+            <div class="col-xs-3"><h3>-</h3></div>
+            <div class="col-xs-3"><h3 id="number6"></h3></div>
+            <div class="col-xs-3"><h3>=</h3></div>
+        </div>
+    </div>
+    <div class="col-xs-6">
+        <div class="row">
+            <div class="col-xs-6"><h3><input autocomplete="off" type="intNumber" class="threeInput" min="1" max="100" size="3" maxlength="3"></h3></div>
+            <div class="col-xs-6"><h3 id="solutionCheck3"></h3></div>
+        </div>
+    </div>
 </div>
 
 <p></p>
 
-<div id="row4" class="row text-center bg-1 abstand-eins">
-  <div class="col-md-2"><h3 id="number7"></h3></div>
-  <div class="col-md-2"><h3>-</h3></div>
-  <div class="col-md-2"><h3 id="number8"></h3></div>
-  <div class="col-md-2"><h3>=</h3></div>
-  <div class="col-md-2"><h3><input autocomplete="off" type="intNumber" class="fourInput" min="1" max="100" size="3" maxlength="3"></h3></div>
-  <div class="col-md-2"><h3 id="solutionCheck4"></h3></div>
+<div id="row4" class="row bg-1 abstand-1">
+    <div class="col-xs-6">
+        <div class="row abstand-1">
+            <div class="col-xs-3"><h3 id="number7"></h3></div>
+            <div class="col-xs-3"><h3>-</h3></div>
+            <div class="col-xs-3"><h3 id="number8"></h3></div>
+            <div class="col-xs-3"><h3>=</h3></div>
+        </div>
+    </div>
+    <div class="col-xs-6">
+        <div class="row">
+            <div class="col-xs-6"><h3><input autocomplete="off" type="intNumber" class="fourInput" min="1" max="100" size="3" maxlength="3"></h3></div>
+            <div class="col-xs-6"><h3 id="solutionCheck4"></h3></div>
+        </div>
+    </div>
 </div>
 
 <p></p>
 
-<div id="row5" class="row text-center bg-1 abstand-eins">
-  <div class="col-md-2"><h3 id="number9"></h3></div>
-  <div class="col-md-2"><h3>-</h3></div>
-  <div class="col-md-2"><h3 id="number10"></h3></div>
-  <div class="col-md-2"><h3>=</h3></div>
-  <div class="col-md-2"><h3><input autocomplete="off" type="intNumber" class="fiveInput" min="1" max="100" size="3" maxlength="3"></h3></div>
-  <div class="col-md-2"><h3 id="solutionCheck5"></h3></div>
+<div id="row5" class="row bg-1 abstand-1">
+    <div class="col-xs-6">
+        <div class="row abstand-1">
+            <div class="col-xs-3"><h3 id="number9"></h3></div>
+            <div class="col-xs-3"><h3>-</h3></div>
+            <div class="col-xs-3"><h3 id="number10"></h3></div>
+            <div class="col-xs-3"><h3>=</h3></div>
+        </div>
+    </div>
+    <div class="col-xs-6">
+        <div class="row">
+            <div class="col-xs-6"><h3><input autocomplete="off" type="intNumber" class="fiveInput" min="1" max="100" size="3" maxlength="3"></h3></div>
+            <div class="col-xs-6"><h3 id="solutionCheck5"></h3></div>
+        </div>
+    </div>
 </div>
-
 <p></p>
 
-<div id="row5" class="row text-center bg-1 abstand-eins">
-  <div class="col-md-2"></div>
-  <div class="col-md-2"></div>
-  <div class="col-md-2"></div>
-  <div class="col-md-2"></div>
-  <div class="col-md-2"><h3><a href="../index.html" type="button" class="btn btn-default">Zurück</a></h3></div>
-  <div class="col-md-2"><h3><a href="subtraction_group_of_ten.html" type="button" class="btn btn-default">Weiter</a></h3></div>
+<div id="row6" class="row bg-1 abstand-1">
+    <div class="col-xs-6">
+        <div class="row abstand-1">
+            <div class="col-xs-3"><h3><a href="../index.html" type="button" class="btn btn-default">Hauptmenü</a></h3></div>
+            <div class="col-xs-3"><h3></h3></div>
+            <div class="col-xs-3"><h3></h3></div>
+            <div class="col-xs-3"><h3></h3></div>
+        </div>
+    </div>
+    <div class="col-xs-6">
+        <div class="row">
+            <div class="col-xs-6"><h3><a href="subtraction_group_of_ten.html" type="button" class="btn btn-default">Weiter</a></h3></div>
+            <div class="col-xs-6"><h3></h3></div>
+        </div>
+    </div>
 </div>
 
 

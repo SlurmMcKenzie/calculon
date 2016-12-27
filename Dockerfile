@@ -20,3 +20,5 @@ RUN	apt-get update && \
 WORKDIR /home/node/mysite
 USER 	node
 
+# docker build -t ubuntu1604/mysite:1.0 .
+# docker run -ti -h WEBSITE --name MYSITE -p 8080:80 -v /home/work/Webseiten/docker/lina/mysite:/home/node/mysite/lina_v1 ubuntu1604/mysite:1.0 bash
